@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        background-color: #fffda9;
+        width: fit-content;
+        }
+    #header {
+        background-color: #d4fdd6;
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;}
+    .label {
+        color: rgba(1, 1, 199, 0.852);
+        font-size: small;
+        font-family: sans-serif;}
+    td {
+        padding: 2px;}
+    textarea {
+        resize: none;
+        border: 1px solid #dcd9d2;
+        box-shadow: 1px 1px white, inset 1px 1px rgb(107, 107, 107) ;
+    }
+    input[type=submit], input[type=reset] {
+        background-color: #dcd9d2;}
+    input[type=text], select {
+        border: 1px solid #dcd9d2;
+        background-color: white;
+        box-shadow: 1px 1px white, inset 1px 1px rgb(107, 107, 107) ;
+    }
+</style>
+<body>
+    <form action="">
+    <table style="width: 450px;">
+    <tr>
+        <td colspan="2" id="header">ĐĂNG KÝ HỌC VIÊN</td>
+    </tr>
+    <tr>
+        <td class="label">Họ và tên</td>
+        <td style="width: 350px;"><input type="text" name="name" size="30"></td>
+    </tr>
+    <tr>
+        <td class="label">Ngày sinh</td>
+        <td><input type="text" name="birth" size="15"></td>
+    </tr>
+    <tr>
+        <td class="label">Giới tính</td>
+        <td>
+        <input type="radio" name="gender">Nam
+        <input type="radio" name="gender">Nữ</td>
+    </tr>
+    <tr>
+        <td class="label" style="vertical-align: top;">Địa chỉ</td>
+        <td><textarea name="address" id="address" cols="25" rows="4"></textarea></td>
+    </tr>
+    <tr>
+        <td class="label">Lớp</td>
+        <td><select name="class" id="class">
+            <option value="" disabled selected> - Chọn lớp -</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td class="label">Email</td>
+        <td><input type="text" name="email" size="20"></td>
+    </tr>
+    <tr>
+        <td class="label">Điện thoại</td>
+        <td><input type="text" name="phone" size="20"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Đăng ký">
+        <input type="reset" value="Nhập lại"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
